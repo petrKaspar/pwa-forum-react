@@ -1,0 +1,22 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .validateForm {
+    margin: 15 auto;
+    text-align: center;
+    color: red;
+  }
+  .success {
+    margin: 15 auto;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #036305;
+  }
+}
+
