@@ -179,7 +179,13 @@ router.route('/threads')
 
 
 //Use our router configuration when we call /api
-app.use('/api', router);
+//app.use('/api', router);
+
+// Express only serves static assets in production
+//if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('build'));
+  //app.use('/build', router);
+//}
 
 //starts the server and listens for requests
 app.listen(port, function() {
