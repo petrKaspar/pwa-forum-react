@@ -58,7 +58,7 @@ export default Application
 const PrivateRoute = ({ id_thread, ...rest }) => (
   <Route {...rest} render={(props) => (
     localStorage.getItem('isAuthenticated') === "true"
-      ? <CommentBox url='http://localhost:3001/api/comments' pollInterval={2000} id_thread={props.match.params.id_thread} />
+      ? <CommentBox url='http://pwa-forum-backend.eu-4.evennode.com/api/comments' pollInterval={2000} id_thread={props.match.params.id_thread} />
       : <Redirect to='/' />
   )} />
 )

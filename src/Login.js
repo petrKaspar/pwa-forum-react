@@ -24,7 +24,7 @@ export default class Login extends Component {
 
   loadUserFromServer() {
     // check data from server
-            axios.get('http://localhost:3001/api/users/'+this.state.email)
+            axios.get('http://pwa-forum-backend.eu-4.evennode.com/api/users/'+this.state.email)
             .then(res => {
 
               var myObject = JSON.stringify(res.data);                     

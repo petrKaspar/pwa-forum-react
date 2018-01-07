@@ -51,7 +51,7 @@ export default class App extends Component {
     const isLoggedIn = localStorage.getItem('isAuthenticated');
     let body = null;
     if (isLoggedIn === "true") {
-      body =  <Thread url='http://localhost:3001/api/threads' />;
+      body =  <Thread url='http://pwa-forum-backend.eu-4.evennode.com/api/threads' />;
 
     } else {
       body = <Login onSignIn={this.signIn.bind(this)}/>;

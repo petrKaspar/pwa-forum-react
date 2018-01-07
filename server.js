@@ -180,7 +180,7 @@ router.route('/threads')
 
 //Use our router configuration when we call /api
 app.use('/api', router);
-app.use(express.static('/api', router));
+//app.use(express.static('/api', router));
 // Express only serves static assets in production
 //if (process.env.NODE_ENV === 'production') {
   //app.use(express.static('build'));

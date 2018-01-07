@@ -31,7 +31,7 @@ export default class SignUp extends Component {
       user.user = this.state.email;
       user.password = this.state.password;
 
-      axios.get('http://localhost:3001/api/users/'+this.state.email)
+      axios.get('http://pwa-forum-backend.eu-4.evennode.com/api/users/'+this.state.email)
             .then(res => {
 
               var myObject = JSON.stringify(res.data);             
@@ -47,7 +47,7 @@ export default class SignUp extends Component {
                 );*/
 
               } else {
-                axios.post('http://localhost:3001/api/users', user)
+                axios.post('http://pwa-forum-backend.eu-4.evennode.com/api/users', user)
                 .then(res => {
                   localStorage.setItem('isAuthenticated', true);
                   localStorage.setItem('username', this.state.email);
