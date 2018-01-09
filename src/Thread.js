@@ -23,8 +23,7 @@ class Thread extends Component {
     render() {
         return (
             <div>
-                <h2>Threads</h2>
-                <h3>pocet = {this.state.data.length}</h3>
+                <h3>Threads list of the chat forum</h3>
                 <table class="center">
                     {this.state.data.map(function(object) {
                         return (
@@ -42,7 +41,7 @@ class Thread extends Component {
             </div>   
 
         );
-
+    //<h3>pocet = {this.state.data.length}</h3>
     }
 }
 
